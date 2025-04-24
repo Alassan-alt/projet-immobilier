@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Détails de l'offre - Maison Moderne</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f8fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #007BFF;
+      padding: 1rem 0;
+      color: white;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .details-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 2rem auto;
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .image-section {
+      flex: 1 1 50%;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info-section {
+      flex: 1 1 50%;
+      padding: 2rem;
+    }
+
+    .info-section h2 {
+      font-size: 28px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .features {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    .features li {
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #f0f0f0;
+    }
+
+    @media (max-width: 768px) {
+      .details-container {
+        flex-direction: column;
+      }
+
+      .info-section, .image-section {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>HB_INNOV</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#properties">Retour aux propriétés</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="details-container">
+    <div class="image-section">
+      <img src="image4.jpg" alt="Maison moderne">
+    </div>
+    <div class="info-section">
+      <h2>Maison Moderne – 400 Millions FCFA</h2>
+      <p class="price">400 Millions FCFA</p>
+      <p class="description">
+        Superbe maison moderne avec architecture contemporaine, grand jardin, piscine, et équipements haut de gamme.
+        Idéale pour une famille recherchant confort et prestige dans un environnement résidentiel sécurisé.
+      </p>
+      <ul class="features">
+        <li>✅ 5 Chambres spacieuses</li>
+        <li>✅ 4 Salles de bain modernes</li>
+        <li>✅ Cuisine américaine équipée</li>
+        <li>✅ Piscine et jardin</li>
+        <li>✅ Garage pour 2 voitures</li>
+        <li>✅ Système de sécurité intégré</li>
+      </ul>
+      <a href="index.html#contact" class="btn">Je suis intéressé(e)</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HB_INNOV. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

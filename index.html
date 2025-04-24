@@ -6,44 +6,70 @@
     <link rel="stylesheet" href="style.css">
     <title>Agence immobiliere </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="contener">
-            <img src="logo.png" alt="Logo de mon site" class="logo" width="200">
-            <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <header class="sticky-header">
+        <div class="container">
+            <div class="logo">HB_INNOV</div>
            
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active" >Accueil </a></li>
+                    <li><a href="#about" >Apropos</a></li>
+                    <li><a href="#properties" >Propriétés</a></li>
+                    <li><a href="#testimonials" >Temoignages</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                
+                </ul>
+            </nav>
+            <div class="user-icon" id="userIconContainer">
+              <a href="connexion.html" id="userIconLink"><i class="fas fa-user-circle"></i></a>
+            </div>
+            
             
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="active" >Accueil </a></li>
-                <li><a href="#about" >Apropos</a></li>
-                <li><a href="#properties" >Propriétés</a></li>
-                <li><a href="#testimonials" >Temoignages</a></li>
-                <li><a href="#contact" >Contact</a></li>
-            
-            </ul>
-        </nav>
+        
 
     </header>
 
+    <!--Accueil-->
     <section class="hero-section" id="home">
         <div class="overlay">
+           
             <div class="hero-content">
+              <video autoplay muted loop playsinline>
+                <source src="arrplan.mp4" type="video/mp4">
+                
+              </video>
                 <h1>Decouvrez nos derniers biens</h1>
                 <a href="#properties" class="cta"> voir les propriétés</a>
             </div>
         </div>
     </section>
+
+    <!-- <section class="video-background">
+        
+      
+        <div class="overlay-content">
+          <h1>Bienvenue chez HB INNOV</h1>
+          <p>Votre futur, notre mission.</p>
+        </div>
+      </section> -->
+      
+
     
+    <!--Apropos-->
     <section class="about-section" id="about">
-        <div class="contener">
+        <div class="container">
             <div class="about-content">
-                <h2 class="section-title"></h2>
-                <p>Chez HB INNOV, nous croyons que chaque projet immobilier est avant tout une aventure humaine.
+                <h2 class="section-title">A propos de nous </h2>
+                <p>Chez HB_INNOV, nous croyons que chaque projet immobilier est avant tout une aventure humaine.
                     C’est pourquoi nous mettons l’écoute, la confiance et l’accompagnement au cœur de notre métier.
-                   Qu’il s’agisse d’acheter votre premier bien, de vendre un lieu chargé de souvenirs ou d’investir pour l’avenir, notre équipe est là pour vous guider à chaque étape, avec bienveillance, transparence et réactivité.
+                   Qu’il s’agisse d’acheter votre premier bien, de vendre un lieu chargé de souvenirs ou d’investir pour l’avenir, <br>notre équipe est là pour vous guider à chaque étape, avec bienveillance, transparence et réactivité.
                    Notre approche mêle expertise du marché, solutions modernes et vraie attention à vos besoins.</p>
                    <p>Parce que votre projet mérite plus qu’un simple service : il mérite une relation de confiance.
                     HB INNOV, l’immobilier autrement, avec vous et pour vous.</p>
@@ -55,93 +81,146 @@
         </div>
     </section>
     
+    <!--Propriétés-->
     <section class="properties-section" id="properties">
-        <div class="contener">
-            <h2>Propriétés en vedette</h2>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image1.jpg" alt="maison moderne">
-                    <div class="property-info">
-                        <h3>Maison moderne</h3>
-                        <p>300 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
+        <div class="container">
+          <h2>Propriétés en vedette</h2>
+          <div class="property-grid">
+            <div class="property-card">
+              <img src="image1.jpg" alt="maison moderne">
+              <div class="property-info">
+                <h3>Maison moderne</h3>
+                <p>300 millions</p>
+                <a href="details1.html" class="btn">Voir Détails</a>
+              </div>
+            </div>
+            <div class="property-card">
+              <img src="image2.jpeg" alt="appartement lumineux">
+              <div class="property-info">
+                <h3>Appartement Lumineux</h3>
+                <p>75 millions</p>
+                <a href="details2.html" class="btn">Voir Détails</a>
+              </div>
+            </div>
+            <div class="property-card">
+              <img src="image3.jpg" alt="appartement lumineux">
+              <div class="property-info">
+                <h3>Appartement Lumineux</h3>
+                <p>50 millions</p>
+                <a href="details3.html" class="btn">Voir Détails</a>
+              </div>
+            </div>
+            <div class="property-card">
+              <img src="image4.jpg" alt="maison moderne">
+              <div class="property-info">
+                <h3>Maison moderne</h3>
+                <p>400 millions</p>
+                <a href="details4.html" class="btn">Voir Détails</a>
+              </div>
+            </div>
+            <!-- Ajoute plus de .property-card ici -->
+            <div class="property-card">
+                <img src="image1.jpg" alt="maison moderne">
+                <div class="property-info">
+                  <h3>Maison moderne</h3>
+                  <p>300 millions</p>
+                  <a href="details1.html" class="btn">Voir Détails</a>
+                </div>
+              </div>
+              <div class="property-card">
+                <img src="image2.jpeg" alt="appartement lumineux">
+                <div class="property-info">
+                  <h3>Appartement Lumineux</h3>
+                  <p>75 millions</p>
+                  <a href="details2.html" class="btn">Voir Détails</a>
+                </div>
+              </div>
+              <div class="property-card">
+                <img src="image3.jpg" alt="appartement lumineux">
+                <div class="property-info">
+                  <h3>Appartement Lumineux</h3>
+                  <p>50 millions</p>
+                  <a href="details3.html" class="btn">Voir Détails</a>
+                </div>
+              </div>
+              <div class="property-card">
+                <img src="image4.jpg" alt="maison moderne">
+                <div class="property-info">
+                  <h3>Maison moderne</h3>
+                  <p>400 millions</p>
+                  <a href="details4.html" class="btn">Voir Détails</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+<!--Temoignages-->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active" >
+                    <p>Service impeccable et professionnel ! Je recommande à 100%</p>
+                    <span>- Souleymane Sanogo</span>
+                    <div>
+                        <img src="fermier.jpg" alt="">
+                    </div>
+                </div>
+                <div class="testimonial" id="active">
+                    <p>Expertise et transparence. Mon projet immobilier a abouti grâce à eux</p>
+                    <span>- Mariam Diallo</span>
+                    <div>
+                        <img src="femmetem.jpg" alt="">
+                    </div>
+                </div>
+                <div class="testimonial" id="active">
+                    <p>Un accompagnement personnalisé du début à la fin. Merci !</p>
+                    <span>- Aziz BAH</span>
+                    <div>
+                        <img src="yourub.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image2.jpeg" alt="appartement lumineux">
-                    <div class="property-info">
-                        <h3>Appartement Lumineux</h3>
-                        <p>75 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image3.jpg" alt="appartement lumineux">
-                    <div class="property-info">
-                        <h3>Appartement Lumineux</h3>
-                        <p>50 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image4.jpg" alt="maison moderne">
-                    <div class="property-info">
-                        <h3>Maison moderne</h3>
-                        <p>400 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image1.jpg" alt="maison moderne">
-                    <div class="property-info">
-                        <h3>Maison moderne</h3>
-                        <p>300 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image2.jpeg" alt="appartement lumineux">
-                    <div class="property-info">
-                        <h3>Appartement Lumineux</h3>
-                        <p>75 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image3.jpg" alt="appartement lumineux">
-                    <div class="property-info">
-                        <h3>Appartement Lumineux</h3>
-                        <p>50 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="image4.jpg" alt="maison moderne">
-                    <div class="property-info">
-                        <h3>Maison moderne</h3>
-                        <p>400 millions</p>
-                        <a href="details.html" class="btn">Voir le Bien</a>
-                    </div>
-                </div>
+            <div class="slider-controls">
+                <span class="prev-slide"><</span>
+                <sapn class="next-slide">></sapn>
             </div>
         </div>
     </section>
 
-   
+    <!--Contact-->
+    <section class="contact-section" id="contact">
+        <div class="contener">
+            <h2 class="section-title">Contactez-nous</h2>
+            <form action="" class="contact-form" >
+                <div class="form-group">
+                  <input type="text" placeholder=" " required>
+                  <label>Votre nom</label>
+                  
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder=" " required>
+                    <label>Votre email</label>
+                </div>
+                <div class="form-group">
+                  <div class="form-group">
+                    <textarea name="message" id="message" placeholder=" " required></textarea>
+                    <label for="message">Votre message</label>
+                </div>
+                
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; HB_INNOV. Tous droits réservés.</p>
+    </footer>
+
+
 
     <script src="script.js">
     
