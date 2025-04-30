@@ -29,15 +29,19 @@ document.addEventListener('DOMContentLoaded', function() {
             villa: 8000
         };
         
-        const estimatedPrice = size * pricePerSqm[type];
-        const resultBox = document.getElementById('estimate-result');
-        
-        resultBox.innerHTML = `
-            <h3>CFA Estimation : <strong>${estimatedPrice.toLocaleString()} CFA</strong></h3>
-            <p>Adresse : ${address}</p>
-            <p>Surface : ${size} m² | Type : ${type}</p>
-            <button id="save-estimate">💾 Sauvegarder</button>
-        `;
+        const estimatedPrice = parseFloat(size) * pricePerSqm[type];
+if (isNaN(estimatedPrice)) {
+    alert("Erreur : Vérifiez la surface et le type de bien.");
+    return;
+}
+
+const resultBox = document.getElementById('estimate-result');
+resultBox.innerHTML = `
+    <h3>CFA Estimation : <strong>${estimatedPrice.toLocaleString()} CFA</strong></h3>
+    <p>Adresse : ${address}</p>
+    <p>Surface : ${size} m² | Type : ${type}</p>
+    <button id="save-estimate">💾 Sauvegarder</button>
+`;
         
         document.getElementById('save-estimate').addEventListener('click', () => {
             alert('Estimation sauvegardée ! Nous vous contacterons.');
