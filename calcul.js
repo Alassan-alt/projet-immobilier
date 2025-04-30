@@ -50,7 +50,7 @@ resultBox.innerHTML = `
 
     // === Comparaison (exemple avec données statiques) ===
     const properties = [
-        { id: 1, price: 25000000, size: 150, type: 'appartement', address: 'Abidjan' },
+        { id: 1, price: 25000000, size: 100, type: 'appartement', address: 'Abidjan' },
         { id: 2, price: 15000000, size: 100, type: 'appartement', address: 'Yamoussoukro' },
     ];
     
